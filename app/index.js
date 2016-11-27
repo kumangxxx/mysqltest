@@ -8,10 +8,12 @@ var pool = mysql.createPool({
 	password : "gitsr4h4514"
 });
 
-pool.getConnection(function(err, c) {
-if (err) {
-console.log(err);
-} else {
-console.log(c);
-}
-});
+//pool.getConnection(function(err, c) {
+//if (err) {
+//console.log(err);
+//} else {
+//console.log(c);
+//}
+//});
+
+console.log("end");
