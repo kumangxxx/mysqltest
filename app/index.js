@@ -7,7 +7,7 @@ console.log("DB IP : " + process.env.dbip);
 app.listen((process.env.PORT || 8082), function() {
 	console.log("running..");
 	var pool = mysql.createPool({
-		localAddress : process.env.dbip,
+		host : "db",
 		user : "root",
 		password : "gitsr4h4514"
 	});
